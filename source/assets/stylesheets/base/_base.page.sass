@@ -2,5 +2,66 @@
 /// @BASE -> PAGE
 ////
 
+@import url('https://fonts.googleapis.com/css?family=Catamaran:500,800|EB+Garamond')
+
 html
-  font-family: $sans-serif
+  font-family: 'Catamaran', $sans-serif
+  background-color: #141b13
+
+  h1,h2,h3,p
+    color: white
+  a
+    color: #F1D325
+  ::selection
+    background: #F1D325
+    color: #333
+
+header
+  background-color: red
+  background-image: url('http://subdrift.s3.amazonaws.com/155332-wide.jpg')
+  background-size: cover
+  background-position: center
+  min-height: 1000px
+  padding-top: 19em
+
+  .marquee
+    background-image: url('http://subdrift.s3.amazonaws.com/marquee.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    height: 400px
+
+  #green
+    background-color: #141b13
+    padding: 3em
+    // text-align: center
+    box-shadow: 0 -5px 10px rgba(0,0,0,.3)
+    h1
+      margin-bottom: 3px
+      font-size: 4em
+      letter-spacing: -0.03rem
+    h2
+      font-weight: 300
+      line-height: 1.2em
+    p
+      font-family: 'EB Garamond'
+      font-size: 1.4rem
+      // line-height: 1.5rem
+      a
+        font-family: 'Catamaran'
+        font-size: 1.3rem
+        text-decoration: none
+
+    .content
+      width: 70%
+      margin: 0 auto
+
+
+a.btn
+  background-color: #507141
+  border: none
+  margin-right: 10px
+  border-radius: 4px
+  &:hover
+    background: darken(#507141,10%)
