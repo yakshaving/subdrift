@@ -71,7 +71,7 @@ configure :build do
   activate :minify_javascript
 
   # Add asset fingerprinting to avoid cache issues
-  activate :asset_hash
+  # activate :asset_hash
 
   # Enable cache buster
   activate :cache_buster
