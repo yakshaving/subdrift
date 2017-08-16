@@ -24,6 +24,7 @@ header
   height: 900px
   padding-top: 19em
 
+
   a.social
     margin-right: 10px
     &:hover
@@ -35,17 +36,26 @@ header
     background-repeat: no-repeat
     background-position: center
     width: 100%
-    height: 400px
+    height: 440px
 
   #green
     background-color: #141b13
     padding: 3em
-    // text-align: center
     box-shadow: 0 -5px 10px rgba(0,0,0,.3)
+
+    @media (max-width: 500px)
+      padding: 1em
+
     h1
-      margin-bottom: 3px
+      margin: 10px 0
       font-size: 4em
       letter-spacing: -0.03rem
+      line-height: 1.2em
+
+      @media (max-width: 500px)
+        font-size: 2.7em
+        line-height: 1.2em
+      
     h2
       font-weight: 300
       line-height: 1.2em
@@ -57,10 +67,11 @@ header
         font-family: 'Catamaran'
         font-size: 1.3rem
         text-decoration: none
+        margin: 6px 6px 6px 0
 
-    .content
-      width: 70%
-      margin: 0 auto
+        @media (max-width: 762px)
+          width: 100%
+
 
 
 a.btn, .btn
