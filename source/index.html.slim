@@ -97,25 +97,3 @@ header
 
 				div
 					img src="http://subdrift.s3.amazonaws.com/seattle.png"
-
-/! Noscript content for added SEO
-noscript
-  a href="https://www.eventbrite.com/e/subcontinental-drift-2018-tickets-44608249475" rel=("noopener noreferrer") target="_blank" /
-
-noscript
-  | Buy Tickets on Eventbrite
-
-script src="https://www.eventbrite.com/static/widgets/eb_widgets.js" 
-
-javascript:
-  var exampleCallback = function() {
-    console.log('Order complete!');
-  };
-
-  window.EBWidgets.createWidget({
-    widgetType: 'checkout',
-    eventId: '44608249475',
-    modal: true,
-    modalTriggerElementId: 'eventbrite-widget-modal-trigger-44608249475',
-    onOrderComplete: exampleCallback
-  });
