@@ -1,7 +1,8 @@
 ---
-title: Subcontinental Drift 2017
+title: Subcontinental Drift 2018
 description: Celebrating South Asian talent and building community in Seattle, WA
 ---
+
 
 script#picatic-widget-script async="" src="https://widget.picatic.com/latest/js/embed.min.js" 
 
@@ -26,7 +27,7 @@ header
 			  		| An open mic celebrating South Asian culture in Seattle
 
 			  	p
-			  		| It's Springtime in Seattle!  We're going to be having our 4th Subcontintal Drift at the Northwest Film Forum in Capitol Hill.  Our perfomers come to a safe space to share comedy sketches, prose they've written, spoken word they're inspired by, music they want to perform, and of course, dance.  The theme for this month is <em> Transitions </em>.  We encourage our performers to come up with art that explores this topic in detail.
+			  		| It's Springtime in Seattle!  We're going to be having our 4th Subcontinental Drift at the Northwest Film Forum in Capitol Hill.  Our perfomers come to a safe space to share comedy sketches, prose they've written, spoken word they're inspired by, music they want to perform, and of course, dance.  The theme for this month is <em> Transitions </em>.  We encourage our performers to come up with art that explores this topic in detail.
 
 			  	p
 				  	| If you're interested in performing at our event on April 16, 2018, let us know by emailing us here:
@@ -39,6 +40,9 @@ header
 		  		p
 		  			a.btn target="_blank" href="https://subdriftsea.typeform.com/to/SWQt4V" I want to perform at this event
 		  			a.btn.picatic-widget-button href="https://www.picatic.com/201250" I want to attend (Buy Tickets)
+
+		  			/! You can customize this button any way you like
+						button#eventbrite-widget-modal-trigger-44608249475.btn type="button"  I want to attend (Buy Tickets)
 						
 				p
 					| Subdrift Seattle is organized by 
@@ -99,4 +103,25 @@ header
 
 				div
 					img src="http://subdrift.s3.amazonaws.com/seattle.png"
-				
+
+/! Noscript content for added SEO
+noscript
+  a href="https://www.eventbrite.com/e/subcontinental-drift-2018-tickets-44608249475" rel=("noopener noreferrer") target="_blank" /
+
+noscript
+  | Buy Tickets on Eventbrite
+
+script src="https://www.eventbrite.com/static/widgets/eb_widgets.js" 
+
+javascript:
+  var exampleCallback = function() {
+    console.log('Order complete!');
+  };
+
+  window.EBWidgets.createWidget({
+    widgetType: 'checkout',
+    eventId: '44608249475',
+    modal: true,
+    modalTriggerElementId: 'eventbrite-widget-modal-trigger-44608249475',
+    onOrderComplete: exampleCallback
+  });
