@@ -1,6 +1,6 @@
 
 
-# Subcontinental Drift Website 2018
+# Subcontinental Drift Website 2020
 
 Using middleman to deploy static site on netlify.   Anything deployed to master is automatically pushed live.
 
